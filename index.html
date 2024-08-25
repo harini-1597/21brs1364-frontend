@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BRS1364</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REST API Interface</h1>
+        <div class="input-section">
+            <label for="json-input">Enter JSON:</label>
+            <textarea id="json-input" placeholder='{ "data": ["A", "C", "z"] }'></textarea>
+            <button id="submit-btn">Submit</button>
+            <p id="error-msg"></p>
+        </div>
+
+        <div id="dropdown-section" class="hidden">
+            <label for="response-filter">Select Data to Display:</label>
+            <select id="response-filter" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+
+        <div id="response-section" class="hidden">
+            <h2>Response:</h2>
+            <div id="response-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
